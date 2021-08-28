@@ -5,7 +5,7 @@
 
 ## 依赖第三方JS库 
 
-[exp-use-jquery.js](https://cdn.jsdelivr.net/gh/examplecode/ user-script-example@latest/exp-use-jquery.js)
+[exp-use-jquery.js](https://cdn.jsdelivr.net/gh/examplecode/user-script-example@latest/exp-use-jquery.js)
 
 
 ``` javascript
