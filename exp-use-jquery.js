@@ -1,14 +1,3 @@
-# user-script-example
-
-这里是一些简单的油猴脚本示例，用来展示在[X浏览器](https://www.xbext.com) 中油猴脚本API的一些使用方法。从中你可以了解到如何使用油猴脚本扩展X浏览器的功能。
-
-
-## 依赖第三方JS库 
-
-[exp-use-jquery.js](https://cdn.jsdelivr.net/gh/examplecode/ user-script-example@latest/exp-use-jquery.js)
-
-
-``` javascript
 // ==UserScript==
 // @name         exp-use-jquery
 // @namespace    www.example.com
@@ -20,9 +9,5 @@
 // @require      https://cdn.jsdelivr.net/npm/jquery@2.1.4/dist/jquery.min.js
 // ==/UserScript==
 $(function() {
-    $("#index-bn").html("Hi, The script changed the title content");
+    $("#index-bn").html("Hi, We changed the head content");
 })();
-
-```
-
-
