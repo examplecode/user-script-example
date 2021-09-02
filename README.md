@@ -1,7 +1,10 @@
 # user-script-example
 
-这里是一些简单的油猴脚本示例，用来展示在[X浏览器](https://www.xbext.com) 中油猴脚本API的一些使用方法。从中你可以了解到如何使用油猴脚本扩展X浏览器的功能。
 
+这里是一些简单的油猴脚本示例，用来展示在[X浏览器](https://www.xbext.com)中油猴脚本API的一些使用方法。在了解了[为X浏览器撰写脚本-油猴脚本](https://) 以及[如何在X浏览器中安装油猴脚本](https://)后，你可以在x浏览器中运行下面这些脚本示例进行测试。
+
+    
+>为避免干扰其他页面，下面例子脚本的作用域都设置为[www.example.com](https://www.example.com),您可以在X浏览器中打开此页面进行测试。
 
 ## 依赖第三方JS库 
 
@@ -10,7 +13,7 @@
 
 ``` javascript
 // ==UserScript==
-// @name         exp-use-jquery
+// @name         示例:使用JQuery库
 // @namespace    www.example.com
 // @version      0.1
 // @description  这个脚本展示了如何使用jquery库对Web页面的DOM树操作,这个例子中我们把页面中的H1标签修改为其他描述
