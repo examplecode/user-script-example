@@ -3,7 +3,7 @@
 
 这里是一些简单的油猴脚本示例，用来展示在油猴脚本元数据标记以及API在[X浏览器](https://www.xbext.com)中的一些使用方法。在这之前推荐您阅读下面两篇文章文章以便对其有初步了解和认识。
 
-- [为X浏览器撰写脚本-油猴脚本](https://www.xbext.com/tutorials/write-user-script-for-xbrowser-part2/) 
+- [为X浏览器撰写脚本-油猴脚本](https://www.xbext.com/docs/tutorials/write-user-script-for-xbrowser-part2/) 
 - [如何在X浏览器中安装油猴脚本](https://www.xbext.com/docs/tutorials/how-to-install-gm-script-in-xbrowser/)
 
     
