@@ -1,7 +1,10 @@
 # user-script-example
 
 
-这里是一些简单的油猴脚本示例，用来展示在[X浏览器](https://www.xbext.com)中油猴脚本API的一些使用方法。在了解了[为X浏览器撰写脚本-油猴脚本](https://) 以及[如何在X浏览器中安装油猴脚本](https://)后，你可以在x浏览器中运行下面这些脚本示例进行测试。
+这里是一些简单的油猴脚本示例，用来展示在油猴脚本元数据标记以及API在[X浏览器](https://www.xbext.com)中的一些使用方法。在这之前推荐您阅读下面两篇文章文章以便对其有初步了解和认识。
+
+- [为X浏览器撰写脚本-油猴脚本](https://www.xbext.com/tutorials/write-user-script-for-xbrowser-part2/) 
+- [如何在X浏览器中安装油猴脚本](https://www.xbext.com/docs/tutorials/how-to-install-gm-script-in-xbrowser/)
 
     
 >为避免干扰其他页面，下面例子脚本的作用域都设置为[www.example.com](https://www.example.com),您可以在X浏览器中打开此页面进行测试。
@@ -165,5 +168,64 @@ $(function() {
         GM_download("https://www.xbext.com/download/xbrowser-release.apk");
     });
 })();
+
+```
+
+
+## 使用 GM_registerMenuCommand 注册长按菜单
+
+[exp-gm-register-menu-command.js](https://cdn.jsdelivr.net/gh/examplecode/user-script-example@latest/exp-gm-register-menu-command.js)
+
+``` javascript
+// ==UserScript==
+// @name         示例:油猴API "GM_registerMenuCommand"用法
+// @namespace    com.example.gm.registerMenuCommand
+// @version      0.1
+// @description  在浏览器长按菜单中添加两个选项，通过菜单选项调用脚本中注册的回调函数.
+// @author       examplecode
+// @match        www.example.com
+// ==/UserScript==
+
+(function() {
+    'use strict';
+    GM_registerMenuCommand("Menu item 1",function() { alert("You click item 1"); });
+    GM_registerMenuCommand("Menu item 2",function() { alert("You click item 2"); });
+    alert("长按页面链接会显示长按菜单，在长按菜单中点击你注册的菜单项，会调用相应的js回调函数");
+})();
+```
+
+
+
+## 使用 GM_xmlhttpRequest 向页面发送异步请求
+
+[exp-gm-http-xml-request.js](https://cdn.jsdelivr.net/gh/examplecode/user-script-example@latest/exp-gm-http-xml-request.js)
+
+``` javascript
+// ==UserScript==
+// @name         示例:油猴API"GM_xmlhttpRequest"使用方法
+// @version      0.1
+// @description  点击按钮像www.example.com发送一个异步httpXmlRequest请求
+// @author       examplecode
+// @match        www.example.com
+// @require      https://cdn.jsdelivr.net/npm/jquery@2.1.4/dist/jquery.min.js
+// ==/UserScript==
+
+(function() {
+    GM_addStyle('#send-btn{color: white;position: absolute;left: 240px;top: 200px;width: 100px;height: 36px;background: #3385ff;border-bottom: 1px solid #2d7');
+    var btn = "<input type='button' id='send-btn' value='Send'/>";
+    $("body").append(btn);
+    // 定义按钮事件
+    $("#send-btn").click(function(){
+        GM_xmlhttpRequest({
+          url: "http://www.example.com",
+          method: "GET",
+          onload: function(response) {
+            alert(response.responseText);
+          }
+        });
+
+    });
+})();
+
 
 ```
