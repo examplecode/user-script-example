@@ -5,6 +5,8 @@
 // @description  When you open the site example.com it says "HELLO"
 // @author       You
 // @match        www.example.com
+// @match        www.example.org
+// @match        *://www.example.net
 // ==/UserScript==
 
 (function() {
