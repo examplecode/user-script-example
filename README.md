@@ -1,3 +1,8 @@
+---
+title: 用户脚本API示例
+date: 2022-05-28 17:59:35
+---
+
 此脚本用来展示 油猴脚本API的使用方法，包含了大部分GM函数使用方法代码示例。我们可以通过运行这些例子来了解这些API的使用方法和特性。下面分别介绍如何在[X浏览器](https://www.xbext.com)和Chrome中运行测试脚本。
 
 
@@ -12,7 +17,7 @@
 
 
 
-![image-20220603161822323](/Users/chengkai/Library/Application Support/typora-user-images/image-20220603161822323.png)
+![image-20220603161822323](images/image-20220603161822323.png)
 
 2.  打开 https://www.example.com 页面准备测试。
 
@@ -20,13 +25,13 @@
 
 
 
-![](/Users/chengkai/git/user-script-example/images/image-20220603163237236.png)
+![](images/image-20220603163237236.png)
 
 
 
 3. 同时X浏览器的页面工具菜单会新增多个选项作为测试每个API函数的入口，如下图所示。
 
-![image-20220603171740730](/Users/chengkai/git/user-script-example/images/image-20220603171740730.png)
+![image-20220603171740730](images/image-20220603171740730.png)
 
 
 
