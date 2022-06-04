@@ -1,1 +1,0 @@
-Hi, This is string resource load by meta field @resource 
