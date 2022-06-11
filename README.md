@@ -11,8 +11,9 @@
 
 ## API 参考
 
-
+https://github.com/examplecode/tampermonkey-api-reference
 
 
 ## 运行脚本
 
+https://www.xbext.com/docs/user-script-api-example.html
