@@ -124,6 +124,13 @@
 
     });
 
+   GM_registerMenuCommand("🔷 GM_deleteValue",function() {
+          GM_deleteValue("data");
+          alert(GM_listValues());
+
+    });
+
+
     GM_registerMenuCommand("🔷 GM_notification_1",function() {
       GM_notification("Hello!");
     });
@@ -196,6 +203,26 @@
           data:JSON.stringify({"post-data":"this is test data"}),
           headers: {
               "Content-type": "application/json"
+          },
+          timeout:3000,
+          onload:function(response){
+            alert("http code:" + response.status);
+          },
+          onerror:function(response) {
+             alert("http code:" + response.status);
+          }
+      });
+
+    });
+
+
+    GM_registerMenuCommand("🔷 GM_Http_post3",function() {
+       GM_xmlhttpRequest({
+          url:"http://192.168.32.223:8081",
+          method :"POST",
+          data: "this is test",
+          headers: {
+              "Content-type": "text/plain;charset=utf-8"
           },
           timeout:3000,
           onload:function(response){
