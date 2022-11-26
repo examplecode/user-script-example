@@ -30,7 +30,7 @@
 
 (function() {
     
-
+    var listener_id;
     var note = `<div id="note" style="text-align: center;width: 340px;margin: 0 auto; background: #d0d7de;font-size: 16px;line-height:1.5;">
                 <p>The script has been run, please open the page tools menu (you can find it in the top right corner of XBrowser or in the main menu "Toolbox" option) to start running  test entries</p>
                 </div>
@@ -95,9 +95,7 @@
       }
 
     });
-
-
-    GM_registerMenuCommand("🔷 GM_getValue",function() {
+    GM_registerMenuCommand("🔷 GM_setValue",function() {
           GM_setValue("foo", "bar");
           GM_setValue("count", 100);
           GM_setValue("active", true);
@@ -106,15 +104,37 @@
             age: 18
           });
 
+          alert("You executed the GM_setValue method, please run the GM_getValue method to see the result");
+
+    });
+
+    GM_registerMenuCommand("🔷 GM_getValue",function() {
+
           var info = `foo = ${GM_getValue("foo")}
           count = ${GM_getValue("count")}
           active = ${GM_getValue("active")}
           data.name =  ${GM_getValue("data").name}`;                   
           alert(info);
 
+    });
+
+    GM_registerMenuCommand("🔷 GM_addValueChangeListener",function() {
+          
+          listener_id = GM_addValueChangeListener("foo",function(name,old_value,new_value,remote) {
+              alert("Value Changed:" + name + ":" + old_value + "=>" + new_value);
+          });
+          GM_setValue("foo", "newbar");
+          
 
     });
 
+    GM_registerMenuCommand("🔷 GM_removeValueChangeListener",function() {
+        if(listener_id) {
+          GM_removeValueChangeListener(listener_id);
+          alert("remove a value change listener [" + listener_id + "]" );
+        }
+        
+    });
 
     GM_registerMenuCommand("🔷 GM_listValues",function() {
           GM_setValue("k1", "v1");
