@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name:zh-CN         油猴脚本API使用方法示例
-// @name:      Example of how to use Tampermonkey API
+// @name      Example of how to use Tampermonkey API
 // @version      0.1
 // @description:zh-CN  这是一个用于油猴脚本函数用法的测试脚本，请打开网站"https://www.example.com"进行测试
 // @description  This is a test script for the usage of Tampermonkey API functions, please open the website "https://www.example.com" to test it
