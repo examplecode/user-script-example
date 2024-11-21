@@ -25,6 +25,8 @@
 // @grant        GM_getResourceText
 // @grant        GM_getResourceURL
 // @grant        GM_xmlhttpRequest
+// @grant        window.onurlchange
+// @grant        GM_cookie
 
 // ==/UserScript==
 
@@ -89,8 +91,13 @@
       GM_download({
         url: `${url}`,
         name: `test-file${++i}.zip`,
-        confirm: false,
-        tag: "test-file"
+        headers:{
+            Referer:"https://www.example.com/"
+        },
+        onload: function() {
+          console.log("download completed !");
+        },
+        tag: "test-file" /* 此属性为 x的扩展，在下载目录中创建名字为tag的子目录中统一保存 */
       });
     }
 
@@ -313,6 +320,49 @@
 
   });
 
+  GM_registerMenuCommand("🔷 urlchange", function () {
+    window.addEventListener('urlchange', () => {
+       alert("urlchange");
+    });
+    window.location = "#test"
+
+  });
+
+
+  GM_registerMenuCommand("🔷GM_cookie_set", function () {
+    GM_cookie('set', {
+      url: "https://www.example.com",
+      domain: "example.com",
+      name: "test",
+      value: "test",
+    }, function (result) {
+        console.log(result);
+    });
+  });
+
+  GM_registerMenuCommand("🔷GM_cookie_list", function () {
+    GM_cookie('list', {
+
+      domain: "www.xbext.com",
+
+    }, function (result) {
+
+        console.log(result);
+    });
+
+  });
+
+  GM_registerMenuCommand("🔷GM_cookie_delete", function () {
+      GM_cookie('delete', {
+        url: "https://www.example.com",
+        name: "test"
+  
+      }, function (result) {
+          console.log(result);
+      });
+
+  });
+  
 
   GM_registerMenuCommand("🔷 GM_info", function () {
     var info = "Script Name: " + GM_info.script.name +
