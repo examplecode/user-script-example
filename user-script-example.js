@@ -102,6 +102,7 @@
     }
 
   });
+
   GM_registerMenuCommand("🔷 GM_setValue", function () {
     GM_setValue("foo", "bar");
     GM_setValue("count", 100);
