@@ -5,8 +5,10 @@
 
 ## Introduction
 
-This script is used to demonstrate the use of the Tampermonkey script API and contains code examples of how to use most of the GM functions. Run these examples to understand the usage and features of these APIs.
+Here are two scripts: one demonstrates how to use the Tampermonkey script API, and the other demonstrates how to use the Greasemonkey 4.0 script API.
 
+- user-script-example.js  Example usage of the Tampermonkey API  
+- user-script-example-for-gm.js  Example usage of the Greasemonkey 4.0 API
 
 
 ## API Reference
@@ -16,5 +18,7 @@ https://github.com/examplecode/tampermonkey-api-reference/blob/master/README-en.
 
 
 ## Running Scripts
+
+The built-in script manager of the XBrowser is compatible with both the Tampermonkey API and the Greasemonkey 4.0 API. You can use whichever script API you are familiar with to implement your custom script features. Below is a test page for the Tampermonkey API usage examples in both XBrowser and Chrome.
 
 https://en.xbext.com/docs/user-script-api-example.html

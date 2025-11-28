@@ -8,7 +8,7 @@
 // @icon         data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAATlBMVEUAAADxPTfwPTbwPTfwQDjwPTbxPTf////vAAD+9vb3r6771NT+7u71mJbyYF3wKB3xUEvzcG32oqD6ysr83t7/QDrzgH74vbz0iYbvGQRgrO+SAAAABnRSTlMAwYXtIXr9IU7BAAADFklEQVRYw6SQi3KjMAxF86qvLFmyMRSS///RFWzabBIT0u2BGY8x91jSbuF02B/DjzjuP067bw7h8zP8EE8cvvL7dnrbsb/lf2M4eP6/Dd7FKfyK0+7jVQHl+jprJfgE1sOZFvK6w6dwXIl7ONhZa9WzhVnS5rgLTYg6logrUbhzX5OWoFDWAUDquapW7hOAQTO9KciknhA1G3lhNFNxn1J+R0AmwGQdD/hm4M4mQIy2BCWQRkgZ5at9fxZkLIKotFUBTYAGQQMJCkz0UlCoR7QRiHgkAhgtoqdXAmKkwFiFSwTTuoAU0fMv4BChtCbIFmGMl7AhWl4RkEDP2OBcIdQWkEICtohFoNQU5AQTbCKGlFsCUvRj+1LcMfZQagkGdII3kA5DQ5D9swHxCq4LEEUk4Z8TmF+VnwTEqAxwtlKK5YFpXnqIEVGokOsBA1zB9CwQdANQ6TJvSPyXTNQjXEJXAvVCc+ZCFRg6yLMgpGQRkEm9OuZUKdjEybstsRLVxOx96iRAtJSeZpAN0sFZ5G6qlMe/O8NEl+q5pcyZTmD5QUBnTIqZ3gXpWzBQoQkpudJvpR4zOuFMjwIF870gGNeEcimkHr8JIpihT4IKZcQ7wTJECVQoyE3gsKK2BI8V+PjFc39KL7cVhkEYDF+MznpYTVqn9v1fdCphskK0LN4KQXP6vz+u7fP9BRRg+gUfqYmThzX/vKB/YZ5EjKhNyYeeJLGX8VoFvzrbA3BlpEa6VCEZq59wuuMnADUS08otgP9WIauSQtxqjpXzLQC1MjdMWh0nQA3gAbYyRC5Xba6d4ADOEkDTMDHjXA5N8XeeXR3nfsGMs3yhyFdaTR3aWw9wnlvrYdPztR7KA1hhMRJhadKGM2lDkjZWXMfiaIAXV8ILDftYnNM6IpQKGBg1k7+IM8CA2tFqBx5xzDphpLYAA0YKoVWHrK1D1hzzDrxiHh4M5nGgGXbEbNrJiHu4CZqUCEJdm8zrZZIdoy4P207RcSPYfjBm4S7uyw3H8hY4nud7EZsuqe2TGk+59ZWbb7L/y9/2/wOlynwXJBnZtgAAAABJRU5ErkJggg==
 // @match        example.com
 // @require      https://unpkg.zhimg.com/jquery@2.1.4/dist/jquery.min.js
-// @resource     avatar01 https://api.multiavatar.com/avatar01.svg
+// @resource     avatar01 https://www.xbext.com/download/avatar-1-svgrepo-com.svg
 // @resource     include-page https://www.xbext.com/download/test-inc.html
 // @grant        GM_addStyle
 // @grant        GM_notification
