@@ -19,6 +19,6 @@ https://github.com/examplecode/tampermonkey-api-reference/blob/master/README-en.
 
 ## Running Scripts
 
-The built-in script manager of the XBrowser is compatible with both the Tampermonkey API and the Greasemonkey 4.0 API. You can use whichever script API you are familiar with to implement your custom script features. Below is a test page for the Tampermonkey API usage examples in both XBrowser and Chrome.
+The built-in script manager of the [XBrowser](https://en.xbext.com/) is compatible with both the Tampermonkey API and the Greasemonkey 4.0 API. You can use whichever script API you are familiar with to implement your custom script features. Below is a test page for the Tampermonkey API usage examples in both XBrowser and Chrome.
 
 https://en.xbext.com/docs/user-script-api-example.html
