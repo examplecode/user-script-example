@@ -7,8 +7,8 @@
 
 Here are two scripts: one demonstrates how to use the Tampermonkey script API, and the other demonstrates how to use the Greasemonkey 4.0 script API.
 
-- user-script-example.js  Example usage of the Tampermonkey API  
-- user-script-example-for-gm.js  Example usage of the Greasemonkey 4.0 API
+- [user-script-example.js](user-script-example.js)  Example usage of the Tampermonkey API  
+- [user-script-example-for-gm.js](user-script-example-for-gm.js)  Example usage of the Greasemonkey 4.0 API
 
 
 ## API Reference
